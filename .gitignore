@@ -1,3 +1,6 @@
+public
+.env
+usage-data-config.json
 node_modules
 # General
 .DS_Store
