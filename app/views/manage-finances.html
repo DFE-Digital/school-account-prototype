@@ -1,7 +1,11 @@
-{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+{% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -11,10 +15,6 @@
   </h1>
   <p class="govuk-body-l">
     This will be the main School Account landing page, in DfE branding.
-  </p>
-
-  <p>
-    (This page doesn't use New Transport or display the GOV.UK header and footer.)
   </p>
 
 {% endblock %}

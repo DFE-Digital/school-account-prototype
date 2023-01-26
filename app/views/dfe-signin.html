@@ -1,13 +1,15 @@
-{% extends "layouts/main.html" %}
+{% extends "layouts/main-gov.html" %}
+
+{% set serviceName = "DfE Sign-in" %}
 
 {% block pageTitle %}
-  DfE Sign-in
-{% endblock %}
+ {{serviceName}}
+  {% endblock %}
 
-<div class="govuk-header__content">
-  <span class="govuk-header--service-name">DfE Sign-In</span>
-</div>
-
+  <div class="govuk-header__content">
+    <span class="govuk-header--service-name">DfE Sign-In</span>
+  </div>
+  
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
