@@ -79,4 +79,37 @@ $accent: #347ca9;
     background: #ffffff;
     border-top: 1px solid #f1f1f1;
 }
+.card2 {
+    border: 1px solid #DBE0E5;
+    border-radius: 5px;
+}
+.card-header2 {
+    background: #f3f2f1;
+    padding: 10px;
+}
+.card-body2 {
+    padding: 10px;
+    background: #ffffff;
+    border-top: 1px solid #DBE0E5;
+}
+.card3 {
+    border: 1px solid #DBE0E5;
+}
+.card-header3 {
+    color: #005ea5;
+    background: #f3f2f1;
+    padding: 10px;
+}
+.card-header3:hover {
+    background-color: #003a69;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    transition-delay: 0.25s;
+}
+.card-body3 {
+    padding: 10px;
+    background: #ffffff;
+    border-top: 1px solid #DBE0E5;
+}
 }
