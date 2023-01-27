@@ -1,0 +1,206 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+     
+
+      {% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+
+{% set html %}
+  <p class="govuk-notification-banner__heading">
+    Academies account return open now
+  </p>
+  <p class="govuk-body">The form is now open for all trusts to complete the accounts return. The deadline for submission is 19 January 2023. 
+  </p>  
+<p><a class="govuk-notification-banner__link" href="#">View the accounts return</a></p>
+</p>
+{% endset %}
+
+{{ govukNotificationBanner({
+  html: html
+}) }}
+
+<h1 class="govuk-heading-xl">Manage your school finances</h1>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Important dates for your calendar</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Name</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">19 January 2023</td>
+      <td class="govuk-table__cell">Academies accounts return submission date</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    </div>
+  </div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Useful dates for your calendar</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Name</th>
+      <th scope="col" class="govuk-table__header">Summary</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">19 October 2023 3pm</td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Webinar: Academies chart of accounts and automation (opens in new tab)</a>
+        </td>
+      <td class="govuk-table__cell">This has now been cancelled.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">
+        Cancelled
+      </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">19 October 2023 11am</td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Dial-in session: Academies chart of accounts and automation (opens in new tab)</a>
+        </td>
+      <td class="govuk-table__cell">This has now been cancelled.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">
+        Cancelled
+      </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">18 October 2022 to 19 January 2023</td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Academies accounts return 2021/2022 (opens in new tab)</a>
+        </td>
+      <td class="govuk-table__cell">Form available for trusts to complete the accounts return.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+        Open now
+      </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">13 October 2022 to 7 December 2022</td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Condition Improvement Fund (opens in new tab)</a>
+        </td>
+      <td class="govuk-table__cell">Apply for capital funding.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+        Open now
+      </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">1 September 2022 to 19 January 2023</td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Automating your accounts return 2021/2022 (opens in new tab)</a>
+        </td>
+      <td class="govuk-table__cell">Download draft financial statements.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+        Open now
+      </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">1 September 2022 to 31 August 2023</td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Academy Trust Handbook 2022/2023 (opens in new tab)</a>
+        </td>
+      <td class="govuk-table__cell">Updated for 2022.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">
+        Updated
+      </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">1 September 2022 to 31 January 2023</td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Academies Accounts Direction (opens in new tab)</a>
+        </td>
+      <td class="govuk-table__cell">Read the requirements for the accounting period that ended 31 August 2022.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--purple">
+        Must read
+      </strong></td>
+    </tr>
+  </tbody>
+</table>      
+
+    </div>
+  </div>
+
+  <h2 class="govuk-heading-m">Stay up-to-date</h2>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <h3 class="govuk-heading-s"><a href="https://www.gov.uk/guidance/academy-trust-handbook/what-has-changed-in-this-edition">The Academy Trust Handbook is now updated</a></h3>
+    <p>View our summary of the changes. Read this if you have responsibility for governing, managing or auditing an academy trust.</p>
+    <p>Updated on 1 September 2022
+      </p>
+      <div class="blueline">
+      </div>
+  </div>
+
+  <div class="govuk-grid-column-one-half">
+    <h3 class="govuk-heading-s"><a href="">Read the Academies Account Direction</a></h3>
+    <p>Read guidance on preparing, auditing and submitting your annual financial statements in academy trusts.</p>
+    <p>
+      <br>
+      Updated on 19 October 2022
+      <br>
+    </p>
+    <div class="blueline">
+    </div>
+  </div>
+</div>
+
+<h2 class="govuk-heading-m">Further support</h2>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    
+    <h3 class="govuk-heading-s"><a href="">Submit financial returns</a></h3>
+    <p>Find guidance on the Academies account return and related tasks.</p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-s"><a href="">Advice and support - financial management</a></h3>
+    <p>Manage risk and resources, and get financial support and planning advice.</p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-s"><a href="">Funds and support</a></h3>
+    <p>Find guidance on what funds are available and if your organisation is eligible.</p>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    
+    <h3 class="govuk-heading-s"><a href="">Buy goods and services</a></h3>
+    <p>Find quality-checked goods and service suppliers and get advice from procurement specialists.
+      </p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-s"><a href="">Manage my digital technology</a></h3>
+    <p>Manage digital and accessibility standards, remote technology and digital infrastructure.</p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-s"><a href=""></a></h3>
+    <p></p>
+  </div>
+</div>
+{% endblock %}

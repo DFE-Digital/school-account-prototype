@@ -66,4 +66,17 @@ $accent: #347ca9;
     padding: 10px 0;
     text-align: right;
 }
+.card {
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+}
+.card-header {
+    background: #f3f2f1;
+    padding: 10px;
+}
+.card-body {
+    padding: 10px;
+    background: #ffffff;
+    border-top: 1px solid #f1f1f1;
+}
 }
