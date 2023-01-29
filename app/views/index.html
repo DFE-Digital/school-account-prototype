@@ -30,29 +30,64 @@
         {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <h2 class="govuk-heading-m">Manage your school finances version 1.0</h2>
+      <h2 class="govuk-heading-l">Sprint X </h2>
+      <p><a href="">Sprint goal:</a> [Description]</p>
 
-      <h3 class="govuk-heading-m">Academy</h2>
-      <p>[Journey for a school business professional.]</p>
-
-      <a href="start.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
-        Start now
-        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
-        </svg>
-      </a>
-
-      <h3 class="govuk-heading-m">Maintained school</h2>
-        <p>[Journey for a school business professional.]</p>
+      <h3 class="govuk-heading-m">Prototype version 1.0</h2>
+      <p><a href="start.html">[Academy: school business professional]</a></p>
+        <p><a href="start.html">[Maintained school: school business professional]</a></p>
   
-        <a href="start.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
-          Start now
-          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
-            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
-          </svg>
-        </a>
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Sprint plan</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">What we're doing</th>
+              <th scope="col" class="govuk-table__header">Why we're doing it</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__cell">Content structure on dashboard</th>
+              <td class="govuk-table__cell">To test whether content is in the correct priority order to meet user needs.</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__cell">Findability</th>
+              <td class="govuk-table__cell">To apply findings from card sort and tree test and see whether users can find key content items.</td>
+            </tr>
+          </tbody>
+        </table>
+
       <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
 
     </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Subsection
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="#">
+              Related link
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Related link
+            </a>
+          </li>
+          <li>
+            <a href="#" class="govuk-!-font-weight-bold">
+              More <span class="govuk-visually-hidden">in Subsection</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
   </div>
 {% endblock %}
