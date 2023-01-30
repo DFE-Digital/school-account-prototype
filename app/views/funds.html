@@ -5,8 +5,14 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
-{% endblock %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="manage-finances.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
 
 {% block content %}
 
