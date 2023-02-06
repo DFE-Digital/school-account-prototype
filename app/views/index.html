@@ -6,88 +6,64 @@
  {{serviceName}}
   {% endblock %}
 
-{% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
-  </div>
-{% endblock %}
-
 {% block content %}
+  
+  
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-top-5">
+        {% if serviceName %} {{ serviceName }} {% endif %}</h1>
 
-      <h1 class="govuk-heading-xl">
-        {% if serviceName %} {{ serviceName }} {% endif %}
-      </h1>
+      <p class="govuk-body govuk-!-margin-bottom-4">This is a prototype, created using the GDS prototype kit, to show the experience of {{serviceName}}.</p>
+      <p class="govuk-body govuk-!-margin-bottom-4">This prototype started at version 3.0 (with earlier versions created in Figma). Please see the related links to access earlier information on earlier stages of the project.</p>
+        </div>
 
-      <h2 class="govuk-heading-l">Sprint X </h2>
-      <p><a href="">Sprint goal:</a> [Description]</p>
+        <div class="govuk-grid-column-one-third pull-right">
+          <aside class="govuk-!-margin-top-5 govuk-!-margin-bottom-9">
+              <h2 class="govuk-heading-m">Useful links</h2>
+              <ul class="govuk-list">
+                <li><a class="govuk-link govuk-!-font-weight-bold" href="#" target="_blank">[Link]</a></li>
+                  <li><a class="govuk-link govuk-!-font-weight-bold" href="#" target="_blank">[Link]</a></li>
+                  <li><a class="govuk-link govuk-!-font-weight-bold" href="#" target="_blank">[Link]</a></li>
+              </ul>
+          </aside>
+      </div>
+        </div>
 
-      <h3 class="govuk-heading-m">Prototype version 1.0</h2>
-      <p><a href="start.html">[Academy: school business professional]</a></p>
-        <p><a href="start.html">[Maintained school: school business professional]</a></p>
-  
+        <div class="govuk-grid-row govuk-!-margin-top-8">
+        <div class="govuk-grid-column-full">
         <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">Sprint plan</caption>
+          <caption class="govuk-table__caption govuk-table__caption--m">V3.0 User journeys</caption>
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">What we're doing</th>
-              <th scope="col" class="govuk-table__header">Why we're doing it</th>
+              <th scope="col" class="govuk-table__header" class="govuk-table__header govuk-!-width-three-quarters">User journey</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+              <th scope="col" class="govuk-table__header"></th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__cell">Content structure on dashboard</th>
-              <td class="govuk-table__cell">To test whether content is in the correct priority order to meet user needs.</td>
+              <td class="govuk-table__cell govuk-!-font-weight-bold">Academy school user</td>
+              <td class="govuk-table__cell">[Decription].</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">
+                <a type="submit" class="govuk-button govuk-!-margin-bottom-1" href="start.html" target="_blank">
+                  View journey
+              </a>
+              </td>
             </tr>
+
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__cell">Findability</th>
-              <td class="govuk-table__cell">To apply findings from card sort and tree test and see whether users can find key content items.</td>
+              <td class="govuk-table__cell govuk-!-font-weight-bold">LA maintained school user</td>
+              <td class="govuk-table__cell">[Decription].</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">
+                <a type="submit" class="govuk-button govuk-!-margin-bottom-1" href="#">
+                  View journey
+              </a>
+              </td>
             </tr>
+
           </tbody>
         </table>
-
-      <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
-
-    </div>
-
-  <div class="govuk-grid-column-one-third">
-
-    <aside class="app-related-items" role="complementary">
-      <h2 class="govuk-heading-m" id="subsection-title">
-        Subsection
-      </h2>
-      <nav role="navigation" aria-labelledby="subsection-title">
-        <ul class="govuk-list govuk-!-font-size-16">
-          <li>
-            <a href="#">
-              Related link
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Related link
-            </a>
-          </li>
-          <li>
-            <a href="#" class="govuk-!-font-weight-bold">
-              More <span class="govuk-visually-hidden">in Subsection</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-  </div>
-
+        </div>
   </div>
 {% endblock %}

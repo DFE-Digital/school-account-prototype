@@ -1,0 +1,97 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="manage-finances.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-9">
+
+      <h1 class="govuk-heading-l" id="now">
+        Latest news and updates    </h1>
+
+      <h2 class="govuk-heading-m" id="aad">
+      Academies Account Direction will be published soon
+      </h2>
+
+      <p>The Academies Account Direction is used by academy trusts, their auditors and reporting accountants to prepare and audit financial statements for the accounting period ending on 31 August annually.</p>
+      <p>Publishing on: 31 March 2023</p>
+      <p><a href="https://www.gov.uk/guidance/academies-accounts-direction" class="govuk-link" rel="noreferrer noopener" target="_blank">Academies Account Direction (opens in new tab)</a></p>
+
+
+      <h2 class="govuk-heading-m" id="tcf">
+        Trust Capacity Fund (TCaF)
+      </h2>
+
+      <p>A fund to help trusts develop their capacity and take on underperforming schools, particularly in education investment areas.</p>
+
+      <p>Opening on: 1 April 2023
+        <br>Closing on: 30 June 2023</p>
+        <p><a href="https://www.gov.uk/government/publications/apply-to-the-trust-capacity-fund" class="govuk-link" rel="noreferrer noopener" target="_blank">Trust Capacity Fund (TCaF) (opens in new tab)</a></p>
+
+        <h2 class="govuk-heading-m" id="">
+          [Title of an older update]
+        </h2>
+          <p>[Description]</p>
+          <p>[Date information]</p>
+          <p><a href="#">[Link text]</a>
+        </p>
+
+          <h2 class="govuk-heading-m" id="">
+          [Title of an older update]
+        </h2>
+          <p>[Description]</p>
+          <p>[Date information]</p>
+          <p><a href="#">[Link text]</a>
+ </p>
+
+        <h2 class="govuk-heading-m" id="">
+          [Title of an older update]
+        </h2>
+          <p>[Description]</p>
+          <p>[Date information]</p>
+          <p><a href="#">[Link text]</a>
+    </p>
+  
+      
+    </div>
+  </div>
+
+  <nav class="govuk-pagination" role="navigation" aria-label="results">
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2">
+          2
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+          3
+        </a>
+      </li>
+    </ul>
+    <div class="govuk-pagination__next">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+        </svg></a>
+    </div>
+  </nav>
+
+{% endblock %}
