@@ -1,0 +1,90 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="manage-finances.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+
+<h1>Events</h1>
+
+<p>Register for and join upcoming webinars, workshops and dial-in Q&A sessions.</p>
+<p align="right">
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Add to your calendar
+  </button>
+  </p>
+  
+  <table class="govuk-table">
+    <caption class="govuk-table__caption govuk-table__caption--m">Events for your calendar</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Date</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">15 April 2023</td>
+        <td class="govuk-table__cell"><a href="#">2pm Workshop: Academies chart of accounts mapping review</a> <br> This workshop is intended to promote best practice of using CoA account codes to maximise efficiency and provide quality data.
+          To join, <a href="#">select the link at the time of the session</a>.</td>
+      </tr>
+          <tr class="govuk-table__row">
+        <td class="govuk-table__cell">17 August 2023</td>
+        <td class="govuk-table__cell"><a href="#">10.30am Dial-in session: Academies chart of accounts and automation</a> <br>Monthly dial-in sessions in MS Teams for people to ask questions about the chart of accounts and automation.
+          To join, <a href="#">select the link at the time of the session</a>.</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">18 August 2023</td>
+        <td class="govuk-table__cell"><a href="#">2pm Webinar: Academies chart of accounts and automation</a> <br>Webinars presenting an introduction to the academies chart of accounts and automation.
+          To join, <a href="#">select the link at the time of the session</a>.</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">15 September 2023</td>
+        <td class="govuk-table__cell"><a href="#">2pm Webinar: Academies chart of accounts and automation</a> <br>Webinars presenting an introduction to the academies chart of accounts and automation.
+          To join, <a href="#">select the link at the time of the session</a>. </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">21 September 2023</td>
+        <td class="govuk-table__cell"><a href="#">10.30am Dial-in session: Academies chart of accounts and automation</a> <br>Monthly dial-in sessions in MS Teams for people to ask questions about the chart of accounts and automation.
+          To join, <a href="#">select the link at the time of the session</a>. </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <nav class="govuk-pagination" role="navigation" aria-label="results">
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="events2.html" aria-label="Page 2">
+          2
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="events3.html" aria-label="Page 3">
+          3
+        </a>
+      </li>
+    </ul>
+    <div class="govuk-pagination__next">
+      <a class="govuk-link govuk-pagination__link" href="events2.html" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+        </svg></a>
+    </div>
+  </nav>
+
+{% endblock %}
