@@ -1,0 +1,57 @@
+{% extends "v4_0/layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/v4_0/manage-finances.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/v4_0/deadlines.html">Mandatory tasks</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Mandatory DfE deadlines for the 2022/2023 academic year</h1>
+
+<p>See all mandatory DfE deadlines for the full 2022/2023 academic year.</p>
+<p align="right">
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Add to your calendar
+</button>
+</p>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">2022/2023 academic year</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Description</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" id="aar">19 January 2023</td>
+      <td class="govuk-table__cell"><a href="/v4_0/accounts-return.html">Academy accounts return</a> <br>The deadline for accounts return submission.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">15 March 2023</td>
+      <td class="govuk-table__cell"><a href="#">School resource management self-assessment checklist submission</a> <br>Deadline for submissions. You can use our <a href="#">benchmarking tool</a> to fill in the online form.</td>
+    </tr>
+   
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">26 July 2023</td>
+      <td class="govuk-table__cell"><a href="#">Academies budget forecast return</a> <br>Submit your budget forecast return to the Education and Skills Funding Agency.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}
