@@ -1,0 +1,68 @@
+{% extends "v3_0/layouts-la/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/v3_0/manage-finances-la.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-9">
+
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-9" id="now">
+        Latest news and updates    </h1>
+
+       
+        <span class="govuk-caption-m" id="sfvs"><strong class="govuk-tag govuk-tag--blue">
+          New
+        </strong> Published 10 March 2023</span>
+        <h2 class="govuk-heading-m">Schools financial value standard (SFVS) and assurance statement due soon
+        </h2>
+      <p>Deadline for submissions 31 March 2023. You can use our benchmarking tool to fill in your statement.</p>
+      <p class="govuk-!-margin-bottom-8"><a href="https://www.gov.uk/government/publications/schools-financial-value-standard-sfvs" class="govuk-link" rel="noreferrer noopener" target="_blank">Schools financial value standard (SFVS) and assurance statement (opens in new tab)</a></p>
+
+      <span class="govuk-caption-m" id="rpa">Published 8 March 2023</span><h2 class="govuk-heading-m">
+        Join the risk protection arrangement (RPA)
+        </h2>
+      <p>Public sector schools can join the risk protection arrangement (RPA), an alternative to commercial insurance, which may save time and money.</p>
+      <p class="govuk-!-margin-bottom-8"><a href="https://www.gov.uk/guidance/the-risk-protection-arrangement-rpa-for-schools" class="govuk-link" rel="noreferrer noopener" target="_blank">The risk protection arrangement (RPA) for schools (opens in new tab)</a></p>
+       
+    </div>
+  </div>
+<!--
+  <nav class="govuk-pagination" role="navigation" aria-label="results">
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2">
+          2
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+          3
+        </a>
+      </li>
+    </ul>
+    <div class="govuk-pagination__next">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+        </svg></a>
+    </div>
+  </nav>
+-->
+{% endblock %}

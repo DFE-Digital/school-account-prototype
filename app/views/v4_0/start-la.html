@@ -1,0 +1,43 @@
+{% extends "v4_0/layouts-la/main-gov.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>{{ serviceName }} allows school business professionals to see upcoming finance related events and deadlines. Find relevant guidance and services to support the tasks you do, all in one place.</p>
+      <p>You can use this service to:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>see mandatory financial tasks for the DfE</li>
+        <li>find out what events are happening, including webinars and dial-in Q&A sessions</li>
+        <li>get DfE school finance related news and updates</li>
+        <li>see what funds are available</li>
+        <li>access DfE guidance and tools to help you manage your finances</li>
+      </ul>
+
+      <p>Registering takes around 5 minutes.</p>
+
+      <a href="/v4_0/dfe-signin-la.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>You will need a DfE Sign-in account to access {{ serviceName }}. </p><p>If you do not have a DfE Sign-in account, you can <a href="https://profile.signin.education.gov.uk/register">create one here</a>.</p>
+
+    </div>
+
+    
+  </div>
+{% endblock %}
