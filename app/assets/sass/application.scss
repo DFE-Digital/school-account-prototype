@@ -164,6 +164,14 @@ $accent: #347ca9;
     border-bottom: 5px solid #1d70b8;
 
 }
+.card-220-thin {
+    min-height: 220px;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1d70b8;
+
+}
 .card-290 {
     min-height: 290px;
     background-color: #FFFFFF;
@@ -171,7 +179,9 @@ $accent: #347ca9;
     padding-bottom: 20px;
     border-bottom: 5px solid #1d70b8;
 
-}.card-300 {
+}
+
+.card-300 {
     min-height: 300px;
     background-color: #FFFFFF;
     padding-top: 20px;
