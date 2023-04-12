@@ -155,8 +155,8 @@ $accent: #347ca9;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 5px solid #1d70b8;
-
-}.card-200 {
+}
+.card-200 {
     min-height: 200px;
     background-color: #FFFFFF;
     padding-top: 20px;
@@ -164,8 +164,24 @@ $accent: #347ca9;
     border-bottom: 5px solid #1d70b8;
 
 }
+.card-200-thin {
+    min-height: 200px;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1d70b8;
+
+}
 .card-220-thin {
     min-height: 220px;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1d70b8;
+
+}
+.card-240-thin {
+    min-height: 240px;
     background-color: #FFFFFF;
     padding-top: 20px;
     padding-bottom: 20px;
