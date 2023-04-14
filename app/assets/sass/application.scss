@@ -188,6 +188,15 @@ $accent: #347ca9;
     border-bottom: 3px solid #1d70b8;
 
 }
+.card-280 {
+    min-height: 280px;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #1d70b8;
+
+}
+
 .card-290 {
     min-height: 290px;
     background-color: #FFFFFF;
@@ -260,6 +269,7 @@ $accent: #347ca9;
     padding-bottom: 20px;
 
 }
+
 .card-news {
     min-height: 50px;
     padding: 20px;
@@ -283,4 +293,11 @@ $accent: #347ca9;
 .card-column {
     flex-grow: 1
   }
+
+.card-universal {
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #1d70b8;
+} 
 }
