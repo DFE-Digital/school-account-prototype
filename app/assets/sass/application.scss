@@ -79,46 +79,35 @@ $accent: #347ca9;
     background: #ffffff;
     border-top: 1px solid #dee0e2;
 }
-.card3 {
-    min-height: 250px;
-    border: 1px solid #dee0e2;
-}
-.card-header3 {
-    color: #005ea5;
-    background: #f8f8f8;
-    padding: 10px;
-}
-.card-header3:hover {
-    color: white;
-    background-color: #003a69;
-    cursor: pointer;
-    transition: 0.1s ease-in-out;
-    transition-delay: 0.25s;
-}
-.card-body3 {
-    padding: 10px;
-    background: #ffffff;
-    border-top: 1px solid #dee0e2;
-}
-.card-links-grey {
-    min-height: 250px;
-    border: 1px solid #dee0e2;
-    background: #f8f8f8;
-    padding: 10px;
-}
-.card-grey {
-    min-height: 250px;
-    border: 1px solid #dee0e2;
-    background: #f8f8f8;
-    padding: 10px;
-}
-.card-grey:hover {
-    color: white;
-    background-color: #003a69;
-    cursor: pointer;
-    transition: 0.1s ease-in-out;
-    transition-delay: 0.25s;
-}
+// .card3 {
+//     min-height: 250px;
+//     border: 1px solid #dee0e2;
+// }
+// .card-header3 {
+//     color: #005ea5;
+//     background: #f8f8f8;
+//     padding: 10px;
+// }
+// .card-header3:hover {
+//     color: white;
+//     background-color: #003a69;
+//     cursor: pointer;
+//     transition: 0.1s ease-in-out;
+//     transition-delay: 0.25s;
+// }
+// .card-body3 {
+//     padding: 10px;
+//     background: #ffffff;
+//     border-top: 1px solid #dee0e2;
+// // }
+// .card-links-grey {
+//     min-height: 250px;
+//     border: 1px solid #dee0e2;
+//     background: #f8f8f8;
+//     padding: 10px;
+// }
+
+
 .card-flat {
     min-height: 340px;
     background-color: #F8F8F8;
@@ -149,71 +138,7 @@ $accent: #347ca9;
     padding-bottom: 20px;
     border-bottom: 5px solid #1d70b8;
 }
-.card-180 {
-    // min-height: 180px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 5px solid #1d70b8;
-}
-.card-200 {
-    min-height: 200px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 5px solid #1d70b8;
 
-}
-.card-200-thin {
-    min-height: 200px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #1d70b8;
-
-}
-.card-220-thin {
-    min-height: 220px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #1d70b8;
-
-}
-.card-240-thin {
-    min-height: 240px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #1d70b8;
-
-}
-.card-280 {
-    min-height: 280px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 5px solid #1d70b8;
-
-}
-
-.card-290 {
-    min-height: 290px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 5px solid #1d70b8;
-
-}
-
-.card-300 {
-    min-height: 300px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 5px solid #1d70b8;
-
-}
 .card-310 {
     min-height: 310px;
     background-color: #FFFFFF;
@@ -222,14 +147,7 @@ $accent: #347ca9;
     border-bottom: 5px solid #1d70b8;
 
 }
-.card-320 {
-    min-height: 320px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 5px solid #1d70b8;
 
-}
 .card-330 {
     min-height: 330px;
     background-color: #FFFFFF;
@@ -270,18 +188,18 @@ $accent: #347ca9;
 
 }
 
-.card-news {
-    min-height: 50px;
-    padding: 20px;
-    border: 1px solid #dee0e2;
+// .card-news {
+//     min-height: 50px;
+//     padding: 20px;
+//     border: 1px solid #dee0e2;
 
-}
-.card-box {
-    min-height: 250px;
-    padding: 20px;
-    border: 1px solid #b1b4b6;
+// }
+// .card-box {
+//     min-height: 250px;
+//     padding: 20px;
+//     border: 1px solid #b1b4b6;
 
-}
+// }
 .card-container {
     display: flex;
   }
@@ -299,5 +217,11 @@ $accent: #347ca9;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 5px solid #1d70b8;
+} 
+.card-universal-thin {
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1d70b8;
 } 
 }
