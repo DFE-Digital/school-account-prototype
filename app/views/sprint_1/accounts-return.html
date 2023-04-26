@@ -1,0 +1,241 @@
+{% extends "sprint_1/layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block pageScripts %}
+  <script type="text/javascript">
+    var $element = document.querySelector('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav($element).init()
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sprint_1/homepage.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sprint_1/deadlines.html">Mandatory tasks</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Academies accounts return
+    </h1>
+    <p class="govuk-body govuk-!-font-weight-bold">Deadline: 19 January 2024</p>
+    <p>Academy trusts and auditors need to complete an annual accounts return. 
+      </p>
+      <p>
+      Read our guide below for all the stages of your academies accounts return.</p>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  
+    <div data-module="appstepnav"id="step-by-step-navigation" class="app-step-nav js-hidden app-step-nav--large" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all steps" data-hide-all-text="Hide all steps">
+      <ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step" id="check-you-re-allowed-to-drive">
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 1<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Read about the academies accounts return</span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-you-re-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph">Information for academy trusts to complete their accounts return.</p>
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.1" class="app-step-nav__link js-link" href="https://www.gov.uk/guidance/academies-accounts-return" target="blank">Read about academies accounts return (opens in new tab)</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence">
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 2<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Use the chart of accounts</span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-get-a-provisional-licence-2">
+            <p class="app-step-nav__paragraph">Financial data structure and guide for automating academy trust financial returns.</p>
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="2.1" class="app-step-nav__link js-link" href="https://www.gov.uk/government/publications/academies-chart-of-accounts" target="blank">Use chart of accounts (opens in new tab)</a>
+              </li>
+            </ol>
+          </div>
+        </li>
+
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice">
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                      <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 3<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Consider automating your accounts return</span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+            <p class="app-step-nav__paragraph">The academies accounts return can be automated. You can electronically submit your trial balance data directly from your financial management software to the department, where it will be used to pre-populate up to 80% of your accounts return.
+            </p>
+            <p>Draft financial statements open for automated accounts on 1 September 2023.</p>
+                          <ol class="app-step-nav__list " data-length="3">
+                <li class="app-step-nav__list-item js-list-item ">
+                  <a data-position="3.1" class="app-step-nav__link js-link" href="https://www.gov.uk/government/publications/academies-chart-of-accounts#introduction-to-automation" target="blank">Automate your accounts return (opens in new tab)</a>
+                </li>
+              </ol>
+
+            
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="prepare-for-your-theory-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                  <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 4<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+              Learn how to automate your accounts return</span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-prepare-for-your-theory-test-4">
+            <p class="app-step-nav__paragraph">The DfE run regular free workshops, dial-in Q&A sessions and webinars to help academies find out how to automate the accounts return.</p>
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.1" class="app-step-nav__link js-link" href="/sprint_1/events1">View events</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-theory-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="5">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 5<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Prepare your submission</span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-theory-test-5">
+            <p class="app-step-nav__paragraph">The accounts return opens on 18 October 2023 so you can prepare an annual report and submission.</p>
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.1" class="app-step-nav__link js-link" href="https://www.gov.uk/guidance/academies-accounts-return" target="blank">Prepare accounts return (opens in new tab)</a>
+              </li>
+            </ol></div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 6<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+               Assign an auditor</span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-driving-test-6">
+            <p class="app-step-nav__paragraph">You will need to assign an auditor to audit your accounts. Make sure to give them all the permissions they need to be able to do this.</p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 7<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Submit the accounts return to the DfE               </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+            <p class="app-step-nav__paragraph">You will need to submit the accounts return by 19 January 2024.</p>
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.1" class="app-step-nav__link js-link" href="https://www.gov.uk/guidance/academies-accounts-direction" target="blank">Submit your accounts return (opens in new tab)</a>
+              </li>
+            </ol>
+        
+          </div>
+
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
