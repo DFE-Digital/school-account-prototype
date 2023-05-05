@@ -1,0 +1,69 @@
+{% extends "sprint_1/layouts/main-gov.html" %}
+
+{% set serviceName = "DfE Sign-in" %}
+
+{% block pageTitle %}
+ {{serviceName}}
+  {% endblock %}
+
+  <div class="govuk-header__content">
+    <span class="govuk-header--service-name">DfE Sign-In</span>
+  </div>
+  
+  <div class="govuk-width-container govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
+      Select your organisation
+    </h1>
+    
+    <p class="govuk-body govuk-!-margin-bottom-8">You are associated with more than one organisation, please select the one you wish to sign-in with.</p>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Your organisations
+          </h1>
+        </legend>
+        <div class="govuk-radios" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="trust">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+              [Academy Trust name]
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="academy">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              [Academy school name]
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  
+    <div class="govuk-button-group">
+      <a type="submit" class="govuk-button" href="/sprint_1/homepage">
+          Continue
+      </a>      
+    </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <h2 class="govuk-heading-m">Actions</h2>
+      <p class="govuk-body"><a href="#" class="govuk-link">Request access to an organisation</a></p>
+    </div>
+  </div>
+</div>
+{% endblock %}
