@@ -27,9 +27,50 @@
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
       Select your organisation
     </h1>
-    
     <p class="govuk-body govuk-!-margin-bottom-8">You are associated with more than one organisation, please select the one you wish to sign-in with.</p>
 
+
+    <form class="form" action="/organisation-answer" method="post">
+
+      {{ govukRadios({
+        name: "organisation",
+        value: data['organisation'],
+        fieldset: {
+          legend: {
+            text: "Your organisations",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "Trust",
+            text: "Forest View Academy Trust"
+          },
+          {
+            value: "School",
+            text: "St John's Primary School"
+          }
+        ]
+      }) }}
+      
+      {{ govukButton({
+        text: "Continue"
+      }) }}
+      
+      </form>
+  </div>
+
+
+
+<div class="govuk-grid-column-one-third">
+  <h2 class="govuk-heading-m">Actions</h2>
+  <p class="govuk-body"><a href="#" class="govuk-link">Request access to an organisation</a></p>
+</div>
+</div>
+</div>
+
+<!--
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -60,10 +101,7 @@
       </a>      
     </div>
     </div>
-    <div class="govuk-grid-column-one-third">
-      <h2 class="govuk-heading-m">Actions</h2>
-      <p class="govuk-body"><a href="#" class="govuk-link">Request access to an organisation</a></p>
-    </div>
-  </div>
-</div>
+-->
+
+
 {% endblock %}
