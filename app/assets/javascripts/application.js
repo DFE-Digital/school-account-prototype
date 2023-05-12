@@ -28,3 +28,13 @@ window.GOVUKPrototypeKit.documentReady(() => {
 
 })
 
+
+if ($('.radio-caption').is(':empty')){
+
+  console.log("text2");
+  }else {
+    $('.default-caption').hide();
+    $('.radio-caption').removeClass('hide');
+    console.log("text3");
+  }
+
