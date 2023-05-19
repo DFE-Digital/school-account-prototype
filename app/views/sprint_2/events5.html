@@ -1,0 +1,157 @@
+{% extends "sprint_2/layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sprint_2/homepage.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Events</h1>
+
+<p>Register for and join upcoming webinars, workshops and dial-in Q&A sessions.</p>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Select a topic      </h1>
+    </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          All topics
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Buildings and infrastructure
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+Finance        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+Procurement        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+  </p>
+
+
+
+  
+  <table class="govuk-table">
+    <caption class="govuk-table__caption govuk-table__caption--m">Events for your calendar</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Date and time</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+        <th scope="col" class="govuk-table__header"><div class="govuk-form-group">
+          <label class="govuk-label" for="sort">
+        <strong>Sub topic</strong>  </label>
+          <select class="govuk-select" id="sort" name="sort">
+            <option value="sub-topic" selected>Filter events by sub topic</option>
+            <option value="returns">Financial returns</option>
+            <option value="buying">Get help buying</option>
+          </select>
+        </div></th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">13 April 2023
+          <br>
+          11am 
+        </td>
+        <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/academies-chart-of-accounts#qa-dial-in-sessions-academies-chart-of-accounts-and-automation">Dial-in session: Academies chart of accounts an automation</a> <br> Monthly dial-in sessions in MS Teams for people to ask questions about the chart of accounts and automation.
+          To join, <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_Y2NkMGQyNmItZGQzOC00NGQyLTlhOWYtZjg1N2JkNDlmOTNm%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522fad277c9-c60a-4da1-b5f3-b3b8b34a82f9%2522%252c%2522Oid%2522%253a%2522d2977aa2-dfb0-498d-860b-01e1cdef3fa5%2522%257d%26_ga%3D2.200153645.2072450094.1675688333-1759979351.1674656266%26anon%3Dtrue&type=meetup-join&deeplinkId=c982ece4-631f-4896-afa0-96bc1826d41d&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true">select the link at the time of the session</a>.</td>
+          <td class="govuk-table__cell">Financial returns</td>
+        </tr>
+      <!--https://www.gov.uk/government/publications/academies-chart-of-accounts#webinars-workshops-and-qa-sessions-->
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">15 April 2023
+          <br>
+          10:30am  
+        </td>
+        <td class="govuk-table__cell"><a href="https://www.eventbrite.com/e/how-the-get-help-buying-for-schools-service-can-support-your-school-buying-tickets-394264223907?aff=odcleoeventsincollection&keep_tld=1">Webinar: How the Get help buying for schools service can support your school buying</a> <br>This webinar will tell you everything you need to know about the support that the free Get help buying for schools service can provide.
+          <td class="govuk-table__cell">Get help buying</td>
+        </td>
+      </tr>
+          <tr class="govuk-table__row">
+        <td class="govuk-table__cell">17 August 2023
+          <br>
+          10:30am  
+        </td>
+        <td class="govuk-table__cell"><a href="#">Dial-in session: Academies chart of accounts and automation</a> <br>Monthly dial-in sessions in MS Teams for people to ask questions about the chart of accounts and automation.
+          To join, <a href="#">select the link at the time of the session</a>.</td>
+          <td class="govuk-table__cell">Financial returns</td>
+        </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">18 August 2023
+          <br>
+          2pm 
+        </td>
+        <td class="govuk-table__cell"><a href="#">Webinar: Academies chart of accounts and automation</a> <br>Webinars presenting an introduction to the academies chart of accounts and automation.
+          To join, <a href="#">select the link at the time of the session</a>.</td>
+          <td class="govuk-table__cell">Financial returns</td>
+        </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">15 September 2023
+          <br>
+          2pm
+        </td>
+        <td class="govuk-table__cell"><a href="#">Webinar: Academies chart of accounts and automation</a> <br>Webinars presenting an introduction to the academies chart of accounts and automation.
+          To join, <a href="#">select the link at the time of the session</a>. </td>
+          <td class="govuk-table__cell">Financial returns</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <nav class="govuk-pagination" role="navigation" aria-label="results">
+    <div class="govuk-pagination__prev">
+      <a class="govuk-link govuk-pagination__link" href="/sprint_2/events2.html" rel="prev">
+        <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+        </svg>
+        <span class="govuk-pagination__link-title">Previous</span></a>
+    </div>
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="/sprint_2/events1.html" aria-label="Page 1">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="/sprint_2/events2.html" aria-label="Page 2">
+          2
+        </a>
+      </li>
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="/sprint_2/events3.html" aria-label="Page 3" aria-current="page">
+          3
+        </a>
+      </li>
+    </ul>
+  </nav>
+   
+
+{% endblock %}
