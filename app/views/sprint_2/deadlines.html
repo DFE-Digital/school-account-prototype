@@ -1,0 +1,58 @@
+{% extends "sprint_2/layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sprint_2/homepage.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Mandatory tasks</h1>
+
+<table class="govuk-table govuk-!-margin-bottom-9">
+  <caption class="govuk-table__caption govuk-table__caption--m">Upcoming mandatory tasks</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Deadline</th>
+      <th scope="col" class="govuk-table__header">Task</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">   
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">26 July 2023</td>
+      <td class="govuk-table__cell"><a href="https://www.gov.uk/guidance/academies-budget-forecast-return">Academies budget forecast return</a> <br>Submit your budget forecast return to the Education and Skills Funding Agency.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Past mandatory tasks</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Deadline</th>
+      <th scope="col" class="govuk-table__header">Task</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" id="aar">19 January 2023</td>
+      <td class="govuk-table__cell"><a href="https://www.gov.uk/guidance/academies-accounts-return">Academy accounts return</a> <br>The deadline for accounts return submission.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">15 March 2023</td>
+      <td class="govuk-table__cell"><a href="https://www.gov.uk/guidance/school-resource-management-self-assessment-checklist">School resource management self-assessment checklist submission</a> <br>Deadline for submissions. You can use the <a href="https://schools-financial-benchmarking.service.gov.uk/">Schools financial benchmarking service</a> to fill in the online form.</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "sprint_2/layouts-la/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sprint_2/homepage-la.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Mandatory tasks</h1>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Upcoming mandatory tasks</caption>
+</table>
+<div class="govuk-inset-text  govuk-!-margin-bottom-9">
+There are no mandatory tasks left for the academic year 2022 to 2023.</div>
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Past mandatory tasks</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Deadline</th>
+      <th scope="col" class="govuk-table__header">Task</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">31 March 2023</td>
+      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/schools-financial-value-standard-sfvs">Schools financial value standard (SFVS) and assurance statement</a> <br>Deadline for submissions. You can use the <a href="https://schools-financial-benchmarking.service.gov.uk/">Schools financial benchmarking service</a> to fill in the online form.</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends "sprint_2/layouts-la/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<span class="govuk-caption-xl">St John's Primary School</span>
+<h1 class="govuk-heading-xl">{{ serviceName }}</h1>
+
+<!--
+<div class="govuk-grid-row govuk-!-margin-bottom-7">
+  <div class="govuk-grid-column-two-thirds card-container">  
+    <p>See upcoming finance related events and deadlines.
+      <br>Find relevant guidance and services to support the tasks you do, all in one place. 
+    </p>
+  </div>
+</div>
+-->
+
+<h2 class="govuk-heading-l">Mandatory tasks</h2>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m"></caption>
+</table>
+<div class="govuk-inset-text">
+There are no mandatory tasks left for the academic year 2022 to 2023.</div>
+
+  <p class="govuk-!-margin-bottom-9"><a href="/sprint_2/deadlines-la.html">See all mandatory tasks</a></p>
+
+
+
+  <h2 class="govuk-heading-l">Latest updates</h2>
+  
+  <table class="govuk-table">
+    <caption class="govuk-table__caption govuk-table__caption--m"></caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Update</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">   
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">
+          <p class="govuk-body" style="color: #505a5f;">Published 9 May 2023</span>
+          <br>
+          <a href="/sprint_2/news-la.html#ntp">The National Tutoring Programme (NTP) final grant payment has been made</a></td>
+      </tr>
+     
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">
+          <p class="govuk-body" style="color: #505a5f;">Published 3 May 2023</span>
+          <br>
+          <a href="/sprint_2/news-la.html#pe">The final allocation for the 2022 to 2023 PE and sport premium has been paid</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">
+          <p class="govuk-body" style="color: #505a5f;">Published 10 March 2023</span>
+          <br>
+          <a href="/sprint_2/news-la.html#sfvs">Schools financial value standard (SFVS) and assurance statement due soon</a></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <p class="govuk-!-margin-bottom-9"><a href="/sprint_2/news.html">See all latest updates</a></p>
+
+
+  <h2 class="govuk-heading-l">Useful services and guidance</h2>
+
+      
+      <div class="govuk-grid-row govuk-!-margin-bottom-7">
+      
+         <div class="govuk-grid-column-one-third card-container govuk-!-margin-bottom-5">
+          <div class="card-universal">
+              <h3 class="govuk-heading-m"><a href="/sprint_2/financial-data-la.html">Understand financial data for your school</a></h3>
+              <p>Links to tools that help you understand data for your school.</p>      
+            </div>
+        </div>
+
+        <div class="govuk-grid-column-one-third card-container">
+        <div class="card-universal">
+          <h3 class="govuk-heading-m"><a href="/sprint_2/value-la.html">Get the best value for your school</a></h3>
+            <p>Advice and tools to help you get the best value for your school.</p>
+        </div>
+      </div> 
+
+    </div>
+
+    <h2 class="govuk-heading-l">Support</h2>
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-7">
+    <div class="govuk-grid-column-one-third card-container">
+
+      <div class="card-universal">
+        <h3 class="govuk-heading-m"><a href="/sprint_2/events1-la.html">Events</a></h3>
+          <p>Links to register for and join upcoming webinars, workshops and dial-in Q&A sessions.</p>
+        </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third card-container">
+      <div class="card-universal">
+        <h3 class="govuk-heading-m"><a href="https://esfahelp.education.gov.uk/hc/en-gb/community/topics/360001030859-Maintained-schools?sort_by=created_at" class="govuk-link">Forum</a></h3>
+          <p>Join the ESFA forum for maintained schools and local authorities, to ask questions, discuss ideas and gain support.</p>
+        </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third card-container">
+      <div class="card-universal">
+        <h3 class="govuk-heading-m"><a href="#">Help</a></h3>
+          <p>Help for academies and maintained schools with DfE services.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+
+{% endblock %}

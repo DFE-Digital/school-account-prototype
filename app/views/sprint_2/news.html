@@ -1,0 +1,101 @@
+{% extends "sprint_2/layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/sprint_2/homepage.html">Home</a>
+    </li>
+  </ol>
+</div>
+    {% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-9">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-9" id="now">
+        Latest updates    </h1>
+
+      
+        
+      <span class="govuk-caption-m" id="ntp">Published 9 May 2023</span>
+      <h2 class="govuk-heading-m">The National Tutoring Programme (NTP) final grant payment has been made
+        </h2>
+      <p>The National Tutoring Programme offers subsidised tuition to help pupils catch up on missed learning due to the pandemic. Funding is paid in termly instalments.</p>
+      <p class="govuk-!-margin-bottom-8"><a href="https://www.gov.uk/government/publications/national-tutoring-programme-guidance-for-schools-2022-to-2023" class="govuk-link">National Tutoring Programme: guidance for schools 2022 to 2023</a></p>
+
+      <span class="govuk-caption-m" id="pe">Published 3 May 2023</span>
+        <h2 class="govuk-heading-m">The final allocation for the 2022 to 2023 PE and sport premium has been paid</h2> 
+      <p>The PE and sport premium funds the professional development and training available to schools to train staff to support young people to live healthy, active lives. Funding is paid in October, February and April each year.</p>
+      <p class="govuk-!-margin-bottom-8"><a href="https://www.gov.uk/government/publications/pe-and-sport-premium-conditions-of-grant-2022-to-2023" class="govuk-link">PE and sport premium: conditions of grant 2022 to 2023</a></p>
+  
+    
+      <span class="govuk-caption-m" id="bfr">Published 3 May 2023</span>
+        <h2 class="govuk-heading-m">The budget forecast return form for academy trusts is now available 
+        </h2>
+          <p>The form is now available, as well as information to help academy trusts submit their budget forecast to the Education and Skills Funding Agency.</p>
+          <p class="govuk-!-margin-bottom-8"><a href="https://www.gov.uk/guidance/academies-budget-forecast-return" class="govuk-link">Academies budget forecast return</a></p>
+  
+          <span class="govuk-caption-m" id="aad">Published 24 April 2022</span>
+          <h2 class="govuk-heading-m" >
+            The 2023 to 2024 GAG allocation statements timetable has been updated
+          </h2>
+            <p>The statements set out the funding you will receive, how it’s calculated, the factors that have been applied and the source of the data used.</p>
+          
+            <p class="govuk-!-margin-bottom-8"><a href="https://www.gov.uk/guidance/academies-funding-allocations" class="govuk-link">Academies revenue funding allocations</a></p>
+    
+     
+          <span class="govuk-caption-m" id="tcf">Published 5 April 2023</span>
+      <h2 class="govuk-heading-m"> 
+        Trust Capacity Fund (TCaF) application window opened on 5 April 2023 
+      </h2>
+      <p>A fund to help trusts develop their capacity and take on underperforming schools, particularly in education investment areas. The fund will open on 1 April 2023 and close on 30 June 2023.</p>
+        <p class="govuk-!-margin-bottom-8"><a href="https://www.gov.uk/government/publications/apply-to-the-trust-capacity-fund" class="govuk-link">Trust Capacity Fund (TCaF)</a></p>
+
+        
+         
+               
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+  <nav class="govuk-pagination" role="navigation" aria-label="results">
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2">
+          2
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+          3
+        </a>
+      </li>
+    </ul>
+    <div class="govuk-pagination__next">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+        </svg></a>
+    </div>
+  </nav>
+  </div>
+
+<!--
+    <div class="govuk-grid-column-one-third">
+      <p class="govuk-body govuk-!-font-size-19">Showing <strong>1</strong> to <strong>5</strong> of <strong>12</strong> results</p>
+    </div>
+  </div>
+-->
+{% endblock %}
