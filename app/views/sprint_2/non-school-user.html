@@ -1,0 +1,80 @@
+{% extends "sprint_2/layouts/main.html" %}
+{% set pageNav="Home" %}
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+       <!-- {% if serviceName %} {{ serviceName }} {% endif %}-->
+       Your institution is not yet eligible for this service
+      </h1>
+      <p>Get school business information is a trial service currently open to school business professionals at some schools and trusts.</p>
+        <p>Your institution is not yet included in the service, but more are being added all the time.</p>
+        <p><a class="govuk-link" href="#">Find out when your institution will be added to the service. </a></p>
+        
+        
+        <p class="govuk-body">Some institutions, for example any that are not schools or trusts, will not be part of the service. These include:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            independent schools
+          </li>
+          <li>
+            international schools
+          </li>
+          <li>
+            hospital schools
+          </li>
+          <li>
+            pupil referral units
+          </li>
+          <li>
+            universities
+          </li>
+          <li>
+            nurseries
+          </li>
+          <li>
+            training providers
+          </li>    
+          <li>
+            local authorities
+          </li>      
+        </ul>
+
+        <h2 class="govuk-heading-l">
+          About the service
+        </h2>
+
+
+        <p>Get school business information lets school business professionals see relevant tasks and deadlines.
+        </p>
+        <p class="govuk-body">The trial service will be added to in coming months. To begin with, users who are part of the trial can:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            see mandatory financial tasks for the DfE
+          </li>
+          <li>
+            see what funds are available
+          </li>
+          <li>
+            get DfE school finance-related updates
+          </li>
+          <li>
+            access DfE guidance and tools to help you manage your finances
+          </li>
+          <li>
+            find out what events are happening, including webinars and dial-in Q&A sessions
+          </li>
+          </ul>
+    </div>
+
+    
+  </div>
+{% endblock %}
